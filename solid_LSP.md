@@ -78,6 +78,7 @@ with height=2 and width=2, that's counterintuitive, I'm going to want to send it
 want to call it a side. So my square class will look something like this now....
 
 	class Square < Rectangle
+	attr_accessor :option
 	  def height=(height)
 	    @side = height
 	  end
