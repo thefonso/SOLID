@@ -1,24 +1,24 @@
+# 1. OCP
 # original - not open but closed
 def main 
   puts "Welcome"
-  getMove
-  doCoolStuff
   puts "Thanks for coming"
 end
 # 
 # 
 # 
-# # But now the client wants to add multiple lanquages.   
+# But now the client wants to add multiple lanquages.   
 # 
 # So we abstract our main so we can plugin any lanquage we want
 def main (welcome_statement, thanks_statement)
   p welcome_statement
-  getMove
-  doCoolStuff
   p thanks_statement
 end
 
+
 # But know let's do this in away that alows for any number of future languages
+
+
 class SomeProgram
   attr_accessor 'lanquage'
   def initialize(language)
@@ -26,8 +26,6 @@ class SomeProgram
   end
   def main
   	p @lanquage.welcome
-    # getMove
-    # doCoolStuff
   	p @lanquage.thanks
   end
 end

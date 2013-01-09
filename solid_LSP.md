@@ -38,8 +38,15 @@ a rectangle in return...
 
 
 	class Program
-	... passes height and width to Rectangle class
-	... receives Rectangle object
+	    def initialize(height, width)
+	        @shape = Rectangle.new
+	        @shape.height = height
+	        @shape.width = width
+	    end
+
+	    def area
+	      @shape.area
+	    end
 	end
 
 
@@ -123,6 +130,7 @@ We use an if statement...
 	    @shape.area
 	  end
 	end
+
 
 
 

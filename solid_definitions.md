@@ -15,3 +15,10 @@ DIP - Dependency Inversion Principle 	- High-level policy should not depend on l
 										  
 
 Now, each post following this one will explore one of these principles....On to the first one, The Single Responsibility Principle.
+
+
+Problem
+
+Result
+
+Solution
