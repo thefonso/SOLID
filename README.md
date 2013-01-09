@@ -6,11 +6,11 @@ Let's start with some definitions.
 
 SOLID:
 
-SRP - Single Responsibility Principle 	- Every class (and method within) should be responsible for one thing and one thing only.
-OCP - Open Closed Principle 			- Open for extension, but closed for modification..[think Firefox]
-LSP - Liskov Substitution Principle 	- Subtypes must be substitutable for their base types
-ISP - Interface Substitution Principle 	- Don't depend on things you don't need
-DIP - Dependency Inversion Principle 	- High-level policy should not depend on low-level detail. Low-level detail should depend on high-level policy.
+- SRP - Single Responsibility Principle 	- Every class (and method within) should be responsible for one thing and one thing only.
+- OCP - Open Closed Principle 			- Open for extension, but closed for modification..[think Firefox]
+- LSP - Liskov Substitution Principle 	- Subtypes must be substitutable for their base types
+- ISP - Interface Substitution Principle 	- Don't depend on things you don't need
+- DIP - Dependency Inversion Principle 	- High-level policy should not depend on low-level detail. Low-level detail should depend on high-level policy.
 										  
 										  
 
