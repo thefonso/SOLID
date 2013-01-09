@@ -1,6 +1,6 @@
-SOLID Principle 5
+##SOLID Principle 5
 
-DIP - Dependency Inversion Principle: High-level policy should not depend on low-level detail. Low-level detail should depend on high-level policy.
+**DIP - Dependency Inversion Principle: High-level policy should not depend on low-level detail. Low-level detail should depend on high-level policy.**
 
 Uncle Bob first came up with this concept in 1978...one year after Star Wars...
 
@@ -11,7 +11,7 @@ So let's say we have a client who wants a program that copies characters from th
 
 Diagram 01
 
-![Alt text](diagram_DIP_01.png)
+![Alt text](http://farm9.staticflickr.com/8356/8366076244_2ce0583a36_z.jpg)
 
 Our code looks like so...
 
@@ -27,7 +27,7 @@ He needs you to have the program sometimes read from the papertape reader. So yo
 
 Diagram 02
 
-![Alt text](diagram_DIP_02.png)
+![Alt text](http://farm9.staticflickr.com/8368/8365004511_ffbc3fbf8f_z.jpg)
 
 Now our code looks like so...
 
@@ -46,7 +46,7 @@ So we create yet another UML diagram.
 
 Diagram 03
 
-![Alt text](diagram_DIP_03.png)
+![Alt text](http://farm9.staticflickr.com/8184/8365004503_d0c9ef54d9_z.jpg)
 
 Our code looks like so...
 
@@ -74,7 +74,7 @@ Well we can, and our UML diagram will look like this now. Make note of the red a
 
 Diagram 04
 
-![Alt text](diagram_DIP_04.png)
+![Alt text](http://farm9.staticflickr.com/8370/8366076206_11ac09f4f6_z.jpg)
 
 	void copy(){
 		int c;

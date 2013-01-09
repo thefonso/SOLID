@@ -53,7 +53,7 @@ Our client "SomeProgram" has too much knowledge, he must know about all the shap
 
 diagram LSP_02
 
-![Alt text](diagram_LSP_02.png)
+![Alt text](http://farm9.staticflickr.com/8333/8366077206_be691dbba4_z.jpg)
 
 LSP violation
 
@@ -109,7 +109,7 @@ So now we have this (Red)
 
 diagram ISP_03
 
-![Alt text](diagram_ISP_03.png)
+![Alt text](http://farm9.staticflickr.com/8494/8365004953_49f6bbb4e3_z.jpg)
 
 
 And we now refactor (rewrite) "SomeProgram"...
@@ -154,16 +154,16 @@ And now our diagram looks like this
 
 diagram ISP_05
 
-![Alt text](diagram_ISP_05.png)
+![Alt text](http://farm9.staticflickr.com/8049/8365004943_61108eec6d_z.jpg)
 
 Now we have resolved our LSP violation by successfully segregating "SomeProgram" from "Rectangle" and "Square".
 And our client "SomeProgram" can get the area of any shape without having to modify it's internal source code to do so.
 
 ##Conclusion:
 
-Clients should only have to depend on methods that they actually call. You can isolate concerns between your client "SomeProgram"
-and the Classes it needs to get information with via an interface-like class. Now we can get area objects with impunity without ever 
-having to change the internal source code of our client to do so...
+You can isolate concerns between your client "SomeProgram" and the Classes it needs to get information with via
+an interface-like class. Now we can get area objects with impunity without ever having to change the internal 
+source code of our client to do so...
 
 	square_area = SomeProgram.new "square", side: 4
 	rectangle_area = SomeProgram.new "rectangle", width: 20, height: 4
@@ -188,4 +188,4 @@ and if we want even more shapes, say a circle, we can just add a new Circle clas
 and our client "SomeProgram" can now generate a circle's area as well. 
 	
 	square_area = SomeProgram.new "circle", radius: 9
-
+	square_area.area # =>

@@ -1,6 +1,6 @@
-SOLID Principle 2 
+##SOLID Principle 2 
 
-OCP - Open Closed Principle - Entities should be open for extension, but closed for modification...[think Google Chrome]
+**OCP - Open Closed Principle - Entities should be open for extension, but closed for modification...[think Google Chrome]**
 
 Analogy:
 In Firefox or the Google Chrome browser you are able to apply extensions to the browser via plugins. 
@@ -13,10 +13,11 @@ So we build this program...The code for this looks like so...
 
 	def main 
 	  puts "Welcome"
-	  getMove
-	  doCoolStuff
 	  puts "Thanks for coming"
 	end
+
+
+##The Problem
 
 **Violation of OCP**
 
@@ -25,7 +26,7 @@ In that it's not open for extension.
 
 
 
-**A Solution**
+##A Solution
 
 So we abstract our main so we can plugin any lanquage we want.
 
@@ -36,8 +37,6 @@ So we abstract our main so we can plugin any lanquage we want.
 	  end
 	  def main
 	  	p @lanquage.welcome
-	    # getMove
-	    # doCoolStuff
 	  	p @lanquage.thanks
 	  end
 	end
@@ -65,16 +64,14 @@ So we abstract our main so we can plugin any lanquage we want.
 	
 
 
-Abstraction is key:
-
 
 Conclusion:
 
-Conformance to the OCP brings you the greatest benefits of Object Oriented Technology...
+Abstraction is key, conformance to the OCP brings you the greatest benefits of Object Oriented Technology...
 
 1. Flexability
 2. Reusability 
 3. Maintainability 
 
-Yet conformance is not achieved simply by using an object-oriented language, like Ruby, it is acheived with diligent effort on the part of 
-the developer to apply abstraction only to the parts of the code that exhibit frequent change.
+Yet conformance is not achieved simply by using an object-oriented language, like Ruby, it is acheived with diligent effort 
+on the part of the developer to apply abstraction only to the parts of the code that exhibit frequent change.

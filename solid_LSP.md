@@ -1,6 +1,6 @@
-SOLID Principle 3
+##SOLID Principle 3
 
-LSP - The Liskov Substitution Principle - SUBTYPES MUST BE SUBSTITUTABLE FOR THEIR BASE TYPES
+**LSP - The Liskov Substitution Principle - SUBTYPES MUST BE SUBSTITUTABLE FOR THEIR BASE TYPES**
 
 Now in preparing for this post I've viewed Uncle Bob's videos on CleanCoder on the subject...correction, I 'experienced' 
 Uncle Bob's videos on Clean Coder (chuckle) So let's see if I can communicate what I've learned to you.
@@ -19,25 +19,25 @@ Now what this looks like is represented in this UML Diagram
 
 diagram LSP_01
 
-![Alt text](diagram_LSP_01.png)
+![Alt text](http://farm9.staticflickr.com/8073/8365005481_f45c30a8c3_z.jpg)
 
 
-So let's say Program = P, Rectangle = R and Square = S
+So let's say SomeProgram = P, Rectangle = R and Square = S
 
 Now this structure allows the Program(P) to use a Rectangle(R) and its subtype Square(S). 
 
 **And here is the key part**. 
 
-When accessing the subtype, Program(P) DOES NOT KNOW
-it is accessing the subtype, this fact is transparent to Program. 
+When accessing the subtype, SomeProgram(P) DOES NOT KNOW
+it is accessing the subtype, this fact is transparent to SomeProgram. 
 
-
+##The Problem
 
 Now Let's say that our user uses Program to pass a height and width value to Rectangle in order to receive  
 a rectangle in return...
 
 
-	class Program
+	class SomeProgram
 	    def initialize(height, width)
 	        @shape = Rectangle.new
 	        @shape.height = height
@@ -114,7 +114,7 @@ Well the MOST common thing done is to simply ask the program what type of instan
 
 We use an if statement...
 
-	class Program
+	class SomeProgram
 	  def initialize(name, height, width)
 	    if name == :square
 	      @shape = Square.new
@@ -145,9 +145,11 @@ LSP - The Liskov Substitution Principle - SUBTYPES MUST BE SUBSTITUTABLE FOR THE
 
 diagram LSP_02
 
-![Alt text](diagram_LSP_02.png)
+![Alt text](http://farm9.staticflickr.com/8333/8366077206_be691dbba4_z.jpg)
 
 LSP violation
+
+##Solution
 
 So how do we solve this violation? We will talk about that in the next SOLID installment...The Interface Segregation Principle
 

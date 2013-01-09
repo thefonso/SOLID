@@ -1,6 +1,6 @@
-SOLID Principle 1
+##SOLID Principle 1
 
-SRP - Single Responsibility Principle - Every class (and method) should be responsible for one thing and one thing only.
+**SRP - Single Responsibility Principle - Every class (and method) should be responsible for one thing and one thing only.**
 
 A client wants you to create a small app that makes a pizza...
 
