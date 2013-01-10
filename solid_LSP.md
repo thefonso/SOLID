@@ -63,12 +63,11 @@ And Rectangle looks like so...
 
 
 	
-And this works fine and dandy. We can make rectangles till we're blue in the face. 
-And find their areas.
+And this works fine and dandy. We can find the area of rectangles till we're blue in the face.
 
 
-	rect = Rectangle.new
-	rect.area(2,4) # => 8
+	rect = SomeProgram.new 20, 10
+	rect.area # => 200
 
 
 

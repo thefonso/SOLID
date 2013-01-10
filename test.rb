@@ -8,7 +8,7 @@ class Rectangle
 end
   
   
-class Program
+class SomeProgram
   def initialize(height, width)
       @shape = Rectangle.new
       @shape.height = height
@@ -20,5 +20,5 @@ class Program
   end
 end
   
-  rect = Program.new 20, 10
+  rect = SomeProgram.new 20, 10
   rect.area # => 200

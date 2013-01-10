@@ -31,37 +31,39 @@ In that it's not open for extension.
 So we abstract our main so we can plugin any lanquage we want.
 
 	class SomeProgram
-	  attr_accessor 'lanquage'
+	  attr_accessor 'language'
 	  def initialize(language)
 	    @language = language
 	  end
 	  def main
-	  	p @lanquage.welcome
-	  	p @lanquage.thanks
+	    p @language.welcome
+	    p @language.thanks
 	  end
 	end
 
 
 	class English
-		def welcome
-			"Welcome"
-		end
+	  def welcome
+	    "Welcome"
+	  end
 	  def thanks
 	    "Thanks"
 	  end
 	end
-  
-	class Espanol
-		def welcome
-			"Hola"
-		end
+
+	class Spanish
+	  def welcome
+	    "Hola"
+	  end
 	  def thanks
 	    "gracia"
 	  end
 	end 
 
-	SomeProgram.new Espanol.new
-	
+	speak = SomeProgram.new Spanish.new
+	speak.main
+	# >> "Hola"
+	# >> "gracia"
 
 
 
