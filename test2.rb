@@ -12,12 +12,13 @@ end
 
 class Circle
   attr_accessor :radius
+  PI = 3.1415927
   def initialize(options)
     self.radius = options.fetch(:radius)
   end
   
   def area
-    2 * Math.pi * self.radius
+    PI * self.radius ** 2
   end
 end
 
@@ -57,8 +58,4 @@ rectangle_area = SomeProgram.new "rectangle", width: 20, height: 4
 circel_area = SomeProgram.new "circle", radius: 9
 square_area.area # => 16
 rectangle_area.area # => 80
-circel_area.area # => 
-# ~> -:20:in `area': undefined method `pi' for Math:Module (NoMethodError)
-# ~> 	from -:41:in `area'
-# ~> 	from -:51:in `area'
-# ~> 	from -:60:in `<main>'
+circel_area.area # => 254.4690087
