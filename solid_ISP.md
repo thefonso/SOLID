@@ -175,17 +175,20 @@ and if we want even more shapes, say a circle, we can just add a new Circle clas
 
 	class Circle
 	  attr_accessor :radius
+	  PI = 3.1415927
 	  def initialize(options)
 	    self.radius = options.fetch(:radius)
 	  end
   
 	  def area
-	    2 * Math.pi * self.radius
+	    PI * self.radius ** 2
 	  end
 	end
 
 
+
 and our client "SomeProgram" can now generate a circle's area as well. 
 	
-	square_area = SomeProgram.new "circle", radius: 9
-	square_area.area # =>
+	circle_area = SomeProgram.new "circle", radius: 9
+	circle_area.area # => 254.4690087
+

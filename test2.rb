@@ -55,7 +55,7 @@ end
 	
 square_area = SomeProgram.new "square", side: 4
 rectangle_area = SomeProgram.new "rectangle", width: 20, height: 4
-circel_area = SomeProgram.new "circle", radius: 9
+circle_area = SomeProgram.new "circle", radius: 9
 square_area.area # => 16
 rectangle_area.area # => 80
-circel_area.area # => 254.4690087
+circle_area.area # => 254.4690087
