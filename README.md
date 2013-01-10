@@ -9,7 +9,7 @@ SOLID:
 - [SRP - Single Responsibility Principle](https://github.com/thefonso/SOLID/blob/master/solid_SRP.md) 	- Every class (and method within) should be responsible for one thing and one thing only.
 - [OCP - Open Closed Principle](https://github.com/thefonso/SOLID/blob/master/solid_OCP.md) 			- Open for extension, but closed for modification..[think Firefox]
 - [LSP - Liskov Substitution Principle](https://github.com/thefonso/SOLID/blob/master/solid_LSP.md) 	- Subtypes must be substitutable for their base types
-- [ISP - Interface Substitution Principle](https://github.com/thefonso/SOLID/blob/master/solid_ISP.md) 	- Don't depend on things you don't need
+- [ISP - Interface Segregation Principle](https://github.com/thefonso/SOLID/blob/master/solid_ISP.md) 	- Don't depend on things you don't need
 - [DIP - Dependency Inversion Principle](https://github.com/thefonso/SOLID/blob/master/solid_DIP.md) 	- High-level policy should not depend on low-level detail. Low-level detail should depend on high-level policy.
 										  
 										  
