@@ -91,10 +91,10 @@ Each shape class is now totally isolated.
 	  end
 	end
 	
-We now create a new class we will call "ProgramShapeInterface" that will receive the name of a shape(Rectangle, Square, etc) and any number of 
+We now create a new class we will call "TwoDimensionalShape" that will receive the name of a shape(Rectangle, Square, etc) and any number of 
 options (hight, width, radius, etc.) and give us the calculated area value from that specific shape object.
 
-	class ProgramShapeInterface
+	class TwoDimensionalShape
 	  def initialize(name, options={})
 	    @s = Object.const_get(name.capitalize).new(options)
 	  end
@@ -139,7 +139,7 @@ To this...
 
 	class SomeProgram 
 	  def initialize(name, options={})
-	    @shape = ProgramShapeInterface.new(name, options)
+	    @shape = TwoDimensionalShape.new(name, options)
 	  end
 	  
 	  def area

@@ -33,7 +33,7 @@ class Square
   end
 end
 
-class ProgramShapeInterface
+class TwoDimensionalShape
   def initialize(name, options={})
     @s = Object.const_get(name.capitalize).new(options)
   end
@@ -45,7 +45,7 @@ end
 
 class SomeProgram 
   def initialize(name, options={})
-    @shape = ProgramShapeInterface.new(name, options)
+    @shape = TwoDimensionalShape.new(name, options)
   end
 	  
   def area
