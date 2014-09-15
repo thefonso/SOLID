@@ -77,3 +77,5 @@ Abstraction is key, conformance to the OCP brings you the greatest benefits of O
 
 Yet conformance is not achieved simply by using an object-oriented language, like Ruby, it is acheived with diligent effort 
 on the part of the developer to apply abstraction only to the parts of the code that exhibit frequent change.
+
+[solid_LSP.md](Next..Liskov Substitution Principle)
