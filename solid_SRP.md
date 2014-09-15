@@ -61,3 +61,5 @@ Thus creating skinny classes.
 Hopefully this simple example succesfully illustrates the idea behind the principle and that is, as your code grows your classes 
 will have a tendincy to grow fat. Fat classes indicate that you may have more than one scope hiding inside your code. 
 Look for this and seperate your classes out according to scope.
+
+[On to the Open Closed Principle](solid_OCP.md)
