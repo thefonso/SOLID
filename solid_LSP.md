@@ -152,3 +152,4 @@ LSP violation
 
 So how do we solve this violation? We will talk about that in the next SOLID installment...The Interface Segregation Principle
 
+[Next...the Interface Segregation Principle](solid_ISP.md)
