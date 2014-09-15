@@ -192,3 +192,4 @@ and our client "SomeProgram" can now generate a circle's area as well.
 	circle_area = SomeProgram.new "circle", radius: 9
 	circle_area.area # => 254.4690087
 
+[Next...Dependency Inversion Principle](solid_DIP.md)
