@@ -60,7 +60,7 @@ LSP violation
 
 ##The Solution:
 
-We must create something that segregates "SomeProgram" from the Rectangle and Square shape Classes. 
+We must create something that segregates "SomeProgram(P)" from the Rectangle(R) and Square(S) shape Classes. 
 We can create an interface that stands between our client "SomeProgram" and our shapes "Square" and "Rectangle".
 
 So the first thing we do is isolate Square and Rectangle from one another just for simplicity sake. 
@@ -156,7 +156,7 @@ diagram ISP_05
 
 ![Alt text](http://farm9.staticflickr.com/8049/8365004943_61108eec6d_z.jpg)
 
-Now we have resolved our LSP violation by successfully segregating "SomeProgram" from "Rectangle" and "Square".
+Now we have resolved our LSP violation by successfully segregating "SomeProgram(P)" from "Rectangle(R)" and "Square(S)".
 And our client "SomeProgram" can get the area of any shape without having to modify it's internal source code to do so.
 
 ##Conclusion:
