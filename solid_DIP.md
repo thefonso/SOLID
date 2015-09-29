@@ -29,7 +29,7 @@ class SomeProgram
   end
 
   def area
-    @shape.area
+    shape.area
   end
 end
 
